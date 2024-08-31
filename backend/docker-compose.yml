@@ -1,0 +1,33 @@
+version: '0'
+
+services:
+   user:
+     build:
+      context: ./User
+      dockerfile: Dockerfile
+   
+   booking:
+    build:
+      context: ./User
+      dockerfile: Dockerfile
+
+   bot:
+     build:
+      context: ./User
+      dockerfile: Dockerfile
+
+   redis:
+     image: "redis:latest"
+     container_name: "redis"
+     ports:
+      - "6379:6379"
+      
+     volumes:
+        - redis-data:/data
+
+volumes:
+    redis-data: 
+      driver: local 
+
+
+   
