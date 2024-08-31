@@ -1,5 +1,5 @@
 {
-  "name": "users",
+  "name": "admin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csp": "^0.0.1-alpha1",
+    "csurf": "^1.11.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.0",
+    "nodemailer": "^6.9.14"
+  }
 }
